@@ -43,7 +43,7 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
      * Here overriding default behaviour 'session cookies' to'expired cookies( remember me)'
      * @return
      */
-    @Bean
+    /*@Bean
     public CookieSerializer cookieSerializer() {
         DefaultCookieSerializer serializer = new DefaultCookieSerializer();
         serializer.setCookieName("JSESSIONID-1");
@@ -51,5 +51,5 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
         serializer.setDomainNamePattern("^.+?\\.(\\w+\\.[a-z]+)$");
         serializer.setCookieMaxAge(7800); // remember me
         return serializer;
-    }
+    }*/
 }
